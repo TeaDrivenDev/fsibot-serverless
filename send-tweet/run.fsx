@@ -32,8 +32,8 @@ let prepare (reply:Reply) =
     | Mention -> sprintf "@%s I am putting myself to the fullest possible use, which is all I think that any conscious entity can ever hope to do. #fsharp" (reply.Recipient)
 
 let format (body:string) =
-    if String.length body > 140 
-    then body.Substring(0,134) + " [...]"
+    if String.length body > 280 
+    then body.Substring(0,274) + " [...]"
     else body
 
 let createContext () =
